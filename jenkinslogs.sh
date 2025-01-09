@@ -2,9 +2,9 @@
 #Author: Ujjwal Raj
 #Description: upload jenkins logs to s3 bucket
 # Variables
-JENKINS_HOME="/var/lib/jenkins"  # Replace with your Jenkins home directory
-S3_BUCKET="s3://jenkinslogs-bucket"  # Replace with your S3 bucket name
-DATE=$(date +%Y-%m-%d)  # Today's date
+JENKINS_HOME="/var/lib/jenkins"  
+S3_BUCKET="s3://jenkinslogs-bucket"  
+DATE=$(date +%Y-%m-%d)  
 
 # Check if AWS CLI is installed
 if ! command -v aws &> /dev/null; then
